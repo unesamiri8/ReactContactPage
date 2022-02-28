@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: "poppins";
+}
+
+.logoImage {
+  width: 80px;
+  grid-area: logoImage;
+  place-self: center;
+}
+.text3dImage {
+  width: 150px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 100vh;
+}
+button {
+    background-color: #e0dede;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+  }
+.top {
+  background-color:#F6F6F6; 
+    font-size: 20px;
+    text-align: center;
+    font-weight:bolder;
+}
+.faMain {
+  font-size: 20px;
+}
+input {
+  height: 55px;
+  background-color: #ececec;
+  border: none;
+  border-radius: 10px;
+}
+.big{
+    height: 100px;
+}
+
+.right {
+  background-image: url("./gradiant.jpg");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.left {
+  text-align: center;
+  padding: 30px;
+  display: grid;
+  grid-template: 
+  "logoImage" 20%
+  "top" 10%
+  "form" 70%
+  /100%
+  ;
+}
+
+.fa {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.iconText{
+    text-align: start;
+    color:rgb(102, 102, 102);
+    align-self: center;
+}
+form{
+    display: grid;
+
+}
+
+@media only screen and (min-width:800px){
+    .main {
+        grid-template-columns: 60% 40%;
+    }
+    .text3dImage {
+        width: 250px;
+      }
+}
